@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --Orange-500: hsl(25, 97%, 53%);
+    --White: hsl(0, 100%, 100%);
+    --Grey-500: hsl(217, 12%, 63%);
+    --Grey-900: hsl(213, 19%, 18%);
+    --Grey-950: hsl(216, 12%, 8%);
+    --grey-800: hsl(216, 14%, 21%);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color:var(--Grey-950) ;
+   font-family: "Overpass", sans-serif;
+   
+   
+}
+.container{
+    align-items: center;
+    flex-direction: column;
+    width: 410px;
+    height: 400px;
+    background-color: var(--Grey-900);
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: -2px 1px 10px 4px rgba(34, 33, 33, 0.25);
+    margin-bottom: 70px;
+}
+
+.content.activ{
+    display: none;
+}
+.text{
+    width: 95%;
+}
+.iconStar img{
+    padding: 12px;
+    box-shadow: -2px 1px 10px 4px rgba(22, 22, 22, 0.102);
+    border-radius: 100%;
+    background-color: var(--grey-800);
+
+}
+
+h1{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: var(--White);
+    font-size: 26px;
+}
+h2{
+    color: var(--White);
+    text-align: center;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 15px;
+    color: var(--Grey-500);
+}
+.options{
+    margin-top: 30px;
+    display: flex;
+    gap: 22px;
+    width: 95%;
+    justify-content: center;
+}
+.btn-option{
+    width: 45px;
+    height: 40px;
+    background-color: var(--grey-800);
+    border-radius: 100%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    color: var(--White);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    
+}
+.btn-option:hover{
+    background-color: var(--Orange-500);
+    color: var(--Grey-950);
+    
+}
+.btn-option:active{
+    background-color: var(--White);
+    color: var(--Grey-950);
+}
+.btn-submit{
+    margin-top: 30px;
+    width: 95%;
+    padding: 15px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--Orange-500);
+
+}
+.btn-submit:active{
+    background-color: var(--White);
+}
+ 
+
+.attribution a{
+    text-decoration: none;
+    color: var(--Orange-500);
+}
+.attribution a:hover{
+    color: var(--Orange-500);
+    text-decoration: underline;
+}
+
+.thankyou-container{
+    width: 95%;
+    display: none;
+
+}
+.thankyou-container.activ1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-thankyou{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-thankyou img{
+    margin-top: 10px;
+}
+.text-thankyou{
+    text-align: center;
+    background-color: var(--grey-800);
+    color: var(--Orange-500);
+    font-size: 15px;
+    padding: 8px;
+    width: 200px;
+    margin: 30px auto;
+    border-radius: 30px;
+
+}
+.paragraph-thankyou{
+    text-align: center;
+}
+
+
+@media (max-width:450px){
+   .container{
+    width: 330px;
+    height: 370px;
+    padding: 20px;
+   }
+   h1{
+    margin-top:20px;
+   }
+   .options{
+    gap: 20px;
+    margin-top: 20px;
+   }
+   .btn-submit{
+    margin-top: 30px;
+
+   }
+}
